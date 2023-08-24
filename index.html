@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Stats</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Kanit:ital,wght@1,300&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">F1 Stats</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Pilotos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Equipos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Calendario</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h3 class="text-white py-4">Estadisticas de la temporada 2023 de la Formula 1</h3>
+    <div class="row pb-4">
+      <div class="row text-white">
+        <h2 class="text-center py-4">Rendimiento Individual</h2>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <table>
+            <tr>
+              <td>Piloto: </td>
+              <td>Fernando Alonso</td>
+            </tr>
+            <tr>
+              <td>Pais: </td>
+              <td>España</td>
+            </tr>
+            <tr>
+              <td>Numero: </td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Equipo: </td>
+              <td>Aston Martin</td>
+            </tr>
+            <tr>
+              <td>Debut en F1: </td>
+              <td>2001</td>
+            </tr>
+            <tr>
+              <td>Carreras Disputadas: </td>
+              <td>370</td>
+            </tr>
+            <tr>
+              <td>Carreras Ganadas: </td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>Podios: </td>
+              <td>104</td>
+            </tr>
+            <tr>
+              <td>Poles: </td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>Vueltas Rápidas: </td>
+              <td>23</td>
+            </tr>
+            <tr>
+              <td>Campeonatos Ganados: </td>
+              <td>2 (2005 - 2006)</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><canvas id="grlinea"></canvas></div> 
+      </div>
+      <div class="row">
+        <h2 class="text-white text-center py-4">Comparativa Compañeros de Equipo</h2>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><img src="images/leclerc.jpg" alt=""></div>
+        <div class="d-flex align-items-center col-4"><canvas id="grcircular"></canvas></div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><img src="images/sainz.jpg" alt=""></div>  
+    </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2 class="text-white text-center py-4">Campeonato de Constructores 2023</h2>
+        <canvas id="grbarra"></canvas>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="bg-secondary text-center text-white p-3">
+      <p>Proyecto 3 - Bootcamp DWFS Full Stack 2023 - UDD</p>
+    </div> 
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js" type="module"></script>
+  
+</body>
+
+
+</html>
