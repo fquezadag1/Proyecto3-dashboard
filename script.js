@@ -2,9 +2,9 @@ import { obtenerdata } from "./axios.js";
 
 async function renderData() {
 
-    const grLinea = await obtenerdata('http://ergast.com/api/f1/current/drivers/alonso/results.json');
-    const grCircular = await obtenerdata('http://ergast.com/api/f1/current/driverStandings.json');
-    const grBarra = await obtenerdata('http://ergast.com/api/f1/current/constructorStandings.json');
+    const grLinea = await obtenerdata('https://ergast.com/api/f1/current/drivers/alonso/results.json');
+    const grCircular = await obtenerdata('https://ergast.com/api/f1/current/driverStandings.json');
+    const grBarra = await obtenerdata('https://ergast.com/api/f1/current/constructorStandings.json');
     
     
     let datagrLinea = grLinea.data.MRData.RaceTable.Races;
